@@ -105,7 +105,7 @@ export const setSelectButton = () => {
 const initialize = () => {
   cardListDOM.scrollIntoView({ behavior: 'smooth', block: 'end' });
 };
-const setResultContainer = () => {
+export const setResultContainer = () => {
   const selectedId = Number(localStorage.getItem(SELECT_RESULT_KEY));
   const isSelected = !!selectedId;
   if (!isSelected) {
